@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    const myArray = ["Hello", "World"];
+    // Solution: Convert the array elements to strings and join them
+    const htmlString = myArray.join("<br>");
+    document.getElementById("myDiv").innerHTML = htmlString; 
+  </script>
+</body>
+</html>
