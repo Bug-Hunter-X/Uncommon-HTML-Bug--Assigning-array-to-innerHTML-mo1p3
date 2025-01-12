@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect usage of innerHTML, attempting to assign an array
+    document.getElementById("myDiv").innerHTML = ["Hello", "World"]; 
+  </script>
+</body>
+</html>
